@@ -1,4 +1,4 @@
-package StructuralPattern.外观模式Facade;
+package StructuralPattern.Facade外观模式;
 
 public class ComputerFacade {
     CPU cpu;
