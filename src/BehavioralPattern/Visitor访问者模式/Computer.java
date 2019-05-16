@@ -16,4 +16,9 @@ public class Computer implements ComputerPart {
         }
         computerPartVisitor.visit(this);
     }
+
+    @Override
+    public void startup() {
+        System.out.println("电脑已经启动");
+    }
 }

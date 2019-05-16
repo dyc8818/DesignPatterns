@@ -1,24 +1,24 @@
 package BehavioralPattern.Visitor访问者模式;
 
-public class ComputerPartVisitorDisplaying implements  ComputerPartVisitor{
+public class ComputerPartVisitorStartup implements  ComputerPartVisitor{
 
     @Override
     public void visit(Computer computer) {
-        System.out.println("Displaying Computer.");
+        computer.startup();
     }
 
     @Override
     public void visit(Mouse mouse) {
-        System.out.println("Displaying Mouse.");
+        mouse.startup();
     }
 
     @Override
     public void visit(Keyboard keyboard) {
-        System.out.println("Displaying Keyboard.");
+        keyboard.startup();
     }
 
     @Override
     public void visit(Monitor monitor) {
-        System.out.println("Displaying Monitor.");
+       monitor.startup();
     }
 }
